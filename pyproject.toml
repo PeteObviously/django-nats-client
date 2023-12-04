@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "django-nats-client"
-version = "0.0.0"
+version = "0.4.2"
 description = ""
 authors = ["CODIUM <support@codium.co>"]
 license = "MIT"
@@ -24,11 +24,6 @@ toml = "^0"
 ipdb = "^0"
 django-environ = "^0.9"
 coverage = "^6"
-
-[tool.poetry-dynamic-versioning]
-enable = true
-vcs = "git"
-style = "semver"
 
 [tool.yapf]
 based_on_style = 'google'
