@@ -59,7 +59,7 @@ class Command(BaseCommand):
     async def nats_coroutine(self):
         namespace = getattr(settings, 'NATS_NAMESPACE', 'default')
         durable_name = getattr(settings, 'NATS_JETSTREAM_DURABLE_NAME', namespace)
-        create_stream = getattr(settings, 'NATS_JETSTREAM_CRATE_STREAM', True)
+        create_stream = getattr(settings, 'NATS_JETSTREAM_CREATE_STREAM', True)
         stream_config = getattr(settings, 'NATS_JETSTREAM_CONFIG', {})
 
         try:
